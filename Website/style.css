@@ -1,0 +1,214 @@
+/* Color & Typography */
+:root {
+  --primary-blue: #3781C2;
+  --secondary-dark: #1F3249;
+  --accent-white: #FFF;
+  --light-gray: #F2F6FA;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  color: var(--secondary-dark);
+  background: var(--light-gray);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+header {
+  background: var(--accent-white);
+  border-bottom: 1px solid #E0E7EF;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo {
+  height: 48px;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--secondary-dark);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover, .nav-btn {
+  color: var(--primary-blue);
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+.nav-btn {
+  padding-left: 14px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(90deg, var(--primary-blue) 50%, #36666c 100%);
+  color: var(--accent-white);
+  padding: 90px 0 60px;
+  text-align: center;
+}
+
+.hero .btn {
+  margin-top: 24px;
+  background: var(--accent-white);
+  color: var(--primary-blue);
+}
+
+h1, h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-blue);
+  color: var(--accent-white);
+  padding: 12px 32px;
+  border-radius: 26px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: var(--secondary-dark);
+  color: var(--accent-white);
+}
+
+.highlights {
+  background: var(--accent-white);
+  padding: 38px 0;
+}
+
+.highlights-flex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.highlights-flex div h2 {
+  color: var(--primary-blue);
+  margin: 0;
+  font-size: 2.3em;
+}
+
+.about,
+.services, 
+.testimonials,
+.values,
+.careers-highlight {
+  padding: 48px 0;
+}
+
+.services-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: var(--accent-white);
+  padding: 26px 20px;
+  border-radius: 18px;
+  width: 220px;
+  box-shadow: 0 2px 16px rgba(31,50,73,0.06);
+  transition: box-shadow 0.2s;
+  text-align: center;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 24px rgba(55,129,194,0.12);
+}
+
+.testimonials blockquote {
+  background: var(--primary-blue);
+  color: var(--accent-white);
+  padding: 24px;
+  border-radius: 9px;
+  margin: 16px 0;
+  font-style: italic;
+  font-size: 1.1em;
+  border-left: 6px solid var(--secondary-dark);
+}
+
+.values ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.careers-highlight {
+  background: var(--primary-blue);
+  color: var(--accent-white);
+  border-radius: 16px;
+  text-align: center;
+}
+
+footer {
+  background: var(--secondary-dark);
+  color: var(--accent-white);
+  padding: 30px 0 18px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95em;
+}
+
+.footer-flex a {
+  color: var(--accent-white);
+  text-decoration: underline;
+}
+
+.socials a img {
+  margin-right: 8px;
+  height: 26px;
+}
+
+/* Responsive Design */
+@media (max-width: 890px) {
+  .highlights-flex, .services-grid, .footer-flex {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    background: var(--accent-white);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    display: none;
+  }
+}
+
+/* Add your custom icons or images in the /images/ directory */
