@@ -6,7 +6,9 @@
       "Bash(git config:*)",
       "Bash(git push:*)",
       "Bash(git remote add:*)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(mv:*)",
+      "Bash(rmdir:*)"
     ],
     "deny": []
   }
